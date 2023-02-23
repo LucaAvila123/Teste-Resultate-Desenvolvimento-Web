@@ -42,7 +42,7 @@
     padding: 0;
 }
 
-#escolha-carro .primeiro-carro{
+#primeiro-carro{
     color: #ffb900;
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -52,7 +52,7 @@
     left: 330px;
 }
 
-#escolha-carro .segundo-carro{
+#segundo-carro{
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: auto;
@@ -62,7 +62,7 @@
     
 }
 
-#escolha-carro .linha-divisoria{
+#linha-divisoria{
     position: relative;
     left: 50px;
 }
@@ -94,7 +94,7 @@
 }
 
 
-#anuncio .nome-carro {
+#nome-carro {
     color: black;
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -106,7 +106,7 @@
 
 }
 
-#anuncio .informaçoes-custo{
+#informaçoes-custo{
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: auto;
@@ -117,7 +117,7 @@
     right: 30px;
 }
 
-#imagens .imagem-fundo{
+#imagem-fundo{
     width: 468px;
     height: 300px;
     position: relative;
@@ -125,7 +125,7 @@
     left: 40px;
 }
 
-#imagens .imagem-carro{
+#imagem-carro{
     position: absolute;
     right: 375px;
     bottom: 50px;
