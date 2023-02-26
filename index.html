@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca da Silva Ávila - Resultate Desafio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     
+    <!-- as imagens precisam estar na mesma pasta inserida do código -->
     <header id="cabeçalho">
         <div class="conteudo-cabeçalho">
             <div class="imagem-logo">
@@ -19,12 +20,14 @@
         </div>
     </header>
     
+    <!-- foi necessario inserir o estilo diretamente na div porque houve problemas para substituir diretamente com JS -->
     <div id="escolha-carro">
         <div id="primeiro-carro" style="color: #ffb900" onclick="trocaPrimeiroCarro()"><b>NOVO POLO</b></div>
         <hr id="linha-divisoria" width = 1 size = 50 color = "#abdbe3">
         <div id="segundo-carro"  style="color: white"   onclick="trocaSegundoCarro()"><b>UP</b></div>
     </div>
     
+
     <div id="anuncio">
         <div id="nome-carro">POLO<br>1.0 MPI</div>
         <hr class="mais-linha" width = 1 size = 50 color = "#abdbe3">
@@ -42,30 +45,27 @@
             <div class="subtitulo-formulario">Escolha o modelo que você deseja e receba ofertas imperdíveis em primeira mão.</div>
         </div>
 
-        <div class="campos">
-            <div><input type="text" class="form-control" placeholder="Nome Completo"
-                aria-describedby="sizing-addon1"></div>
-            <div><input type="text" class="form-control" placeholder="E-mail"
-                aria-describedby="sizing-addon1"></div>
-            <div><input type="text" class="form-control" placeholder="Telefone"
-                aria-describedby="sizing-addon1"></div>
-            <div><input type="text" class="form-control" placeholder="Mensagem"
-                aria-describedby="sizing-addon1"></div>    
-            <div><input type="text" class="form-control" placeholder="Data de preferência do Test Drive"
-                aria-describedby="sizing-addon1"></div>
-            <div><input type="button" class="botao">GARANTA AGORA</div>        
-        </div>
+        <!-- a tag <p> foi necessária para dar espaços para o funcionamento do formulário -->
+        <form class="campos">
+            <p><input type="text" class="elementos" id="nome-completo" placeholder="Nome Completo"></p>
+            <p><input type="text" class="elementos" id="e-mail" placeholder="E-mail"></p>
+            <p><input type="text" class="elementos" id="telefone" placeholder="Telefone"></p>
+            <textarea id="mensagem" rows="5" cols="43" maxlength="500" placeholder="Mensagem"></textarea>
+            <p><input type="text" class="elementos" id="dataTestDrive" placeholder="Data de preferência do Test Drive"></p>
+            <p><input type="submit" class="botao" id="envio" value="GARANTA AGORA"></p>
+        </form>
+
     </div>
 
     <footer>
         <div id="faixa-amarela">imagens ilustrativas. novo polo 1.0 mpi a partir de r$ 49.990,00 e financiamento com taxa 0% valido para a entrada de 60% e saldo em 24 meses. válido até 31/10/2018.</div>
         <div id="rodape">
-            <img src="pin.png" class="imagem-local">
-            av. vitória, - vitória - cep 29000-000
-            <img src="email.png" class="imagem-email">
-            e-mail: exemplo@loremipsum.com.br
-            <img src="phonelink_ring.png">
-            tel (27) 99999-9999
+            <img src="pin.png" class="local">
+            <div class="local">av. vitória, - vitória - cep 29000-000</div>
+            <img src="email.png" class="email-rodape">
+            <div class="email-rodape">e-mail: exemplo@loremipsum.com.br</div>
+            <img src="phonelink_ring.png" class="telefone-rodape">
+            <div class="telefone-rodape">tel (27) 99999-9999</div>
         </div>
     </footer>
     

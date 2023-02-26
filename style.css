@@ -1,6 +1,6 @@
 #cabeçalho{
-    width: 100%;      /* 1920px */
-    height: 10%;       /* 90px */
+    width: 100%;     
+    height: 10%;      
     display: flex;  
     justify-content: center;
     background-color: white;
@@ -11,8 +11,8 @@
     justify-content: space-between;
     text-align: center;
     height: 100%;
-    width: 100%;      /* 1920px */   
-    padding: 0 0.2083em;        /* 20px */     
+    width: 100%;        
+    padding: 0 0.2083em;          
 }
 
 #cabeçalho .imagem-logo{
@@ -27,8 +27,8 @@
 
 /* preciso verificar como deixar a tela preta inteira no negócio */
 #escolha-carro{
-    width: 100%;      /* 1920px */
-    height: 8.33%;       /* 90px */
+    width: 100%;      
+    height: 8.33%;       
     flex-grow: 1;
     display: flex;  
     justify-content: center;
@@ -69,14 +69,13 @@
 
 #anuncio{
 
-    width: 100%;      /* 1920px */
-    height: 8.33%;       /* 90px */
+    width: 100%;      
+    height: 8.33%;      
 
     flex-grow: 1;
     display: flex;  
     justify-content: center;
     
-    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
 
@@ -117,6 +116,7 @@
     right: 30px;
 }
 
+
 #imagem-fundo{
     width: 468px;
     height: 300px;
@@ -153,13 +153,13 @@
     text-align: center;
 }
 
-/* preciso aumentar os campos do formulario */
+/* campos espaçados por meio da tag <p> */
 #formulario .campos{
     width: 450px;
     height: 60px;
     position: absolute;
     left: 550px;
-    top: 250px;
+    top: 210px;
 }
 
 #faixa-amarela{
@@ -180,10 +180,10 @@
     
 }
 #rodape{
-    width: 100%;      /* 1920px */
-    height: 5%;       /* 90px */
+    width: 100%;     
+    height: 5%;       
     display: flex;  
-    justify-content: left;
+    justify-content: center;
     background-color: black;
     color: white;
     position:absolute;
@@ -194,9 +194,36 @@
     align-items: center;
 }
 
-/* * { */
-    /* box-sizing: border-box; */
-    /* margin: 0; */
-    /* padding: 0; */
-/* } */
+.elementos{
+    width: 360px;
+    height: 30px;
+    font-style: italic;
+}
 
+.botao{
+    width: 368px;
+    height: 30px;
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    background-color: #2e8b57;
+}
+
+#mensagem{
+    font-style: italic;
+}
+
+.local{
+    position: relative;
+    left: -50px;
+}
+
+.email-rodape{
+    position: relative;
+    left: -20px;
+}
+
+.telefone-rodape{
+    position: relative;
+    left: 20px;
+}

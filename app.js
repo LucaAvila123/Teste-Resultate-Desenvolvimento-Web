@@ -1,5 +1,4 @@
-let carroAtual = document.getElementById("primeiro-carro")
-console.log(carroAtual.style.color)
+// o javascript desse código foi usado apenas para substituir um carro pelo outro
 
 function trocaPrimeiroCarro(){
     let primeiroCarro = document.getElementById("primeiro-carro")
